@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.container input,
+.container textarea,
+.container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.container textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container button {
+  background-color: #8f66ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #7a5acf;
+}
+
+.cancel-button {
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+
+.cancel-button:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.file-input-container input[type="file"] {
+  width: 100%;
+  color: #fff;
+  font-size: 10px;
+}
+
+.file-input-container input[type="file"]::file-selector-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: #fff;
+  color: var(--body);
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.file-input-container input[type="file"]::file-selector-button:hover {
+  background-color: #ffffffc4;
+}
+
+input#image {
+  cursor: pointer;
+}

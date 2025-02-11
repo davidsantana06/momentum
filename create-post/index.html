@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar Postagem</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Sofia+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp|Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Adicionar uma postagem</h1>
+      <form>
+        <input
+          type="text"
+          placeholder="Título"
+          required
+          minlength="1"
+          maxlength="50"
+        />
+
+        <div class="file-input-container">
+          <input
+            id="image"
+            name="image"
+            type="file"
+            accept="image/*"
+            required
+          />
+        </div>
+
+        <textarea placeholder="Descrição" maxlength="150"></textarea>
+
+        <input type="text" placeholder="Categoria" maxlength="30" />
+
+        <div class="button-container">
+          <button type="button" class="cancel-button">Cancelar</button>
+          <button type="submit">Publicar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

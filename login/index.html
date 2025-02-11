@@ -1,0 +1,61 @@
+<!-- 
+
+alisson:
+Autenticação - feito
+Listar postagens em destaque
+Listar postagens por categoria
+
+david:
+Criar postagem
+Exibir postagem 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Sofia+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp|Material+Symbols+Outlined"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bem-vindo ao Momentum!</title>
+</head>
+<body>
+    <main>
+        <section class="left">
+            <img src="/assets/login-bg.png" alt="">
+        </section>
+        <section class="right">
+            <div class="form-wrapper">
+                <img src="/assets/logo.png" alt="">
+                <h1>Bem vindo ao <span>Momentum</span></h1>
+                <form id="form">
+                    <div class="form-item form-group">
+                        <input type="text" id="username" autocomplete="off" placeholder="" required>
+                        <label for="username">Email</label>
+                    </div>
+                    <div class="form-item form-group">
+                        <input type="password" id="username" autocomplete="off" placeholder="" required>
+                        <label for="username">Senha</label>
+                    </div>
+                    <div class="buttons">
+                        <a href="/posts/">
+                            <button id="button" type="button">Começar</button>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="register">
+                        Não tem uma conta? <span>Faça parte</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

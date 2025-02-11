@@ -1,0 +1,332 @@
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 26px;
+  max-width: 100%;
+  border-bottom: 1px solid #444444;
+}
+
+.header .logo {
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.header .search {
+  width: 100%;
+  max-width: 600px;
+  margin: 0px 26px;
+  padding: 12px 35px;
+  border-radius: 40px;
+  outline: none;
+  position: relative;
+  background-color: var(--body);
+  font-size: 15px;
+  background-image: url("https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/search-3-256.png");
+  background-size: 21px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: 10px;
+  color: gray;
+  border: 1px solid #444444;
+}
+
+.header .search:hover {
+  background-color: #3333;
+}
+
+.header .search:focus {
+  border-color: var(--primary);
+}
+
+.header .search::placeholder {
+  user-select: none;
+}
+
+/* HEADER --> USER INFO SECTION */
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icon-wrapper .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-info {
+  width: 250px;
+  height: 350px;
+  border-radius: 15px;
+  background-color: var(--body);
+  border: 1px solid #444444;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  user-select: none;
+  z-index: 99;
+}
+
+.pp:focus + .user-info, .user-info:focus {
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+
+.user-info a {
+  padding: 5px 15px;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+}
+
+.user-info {
+  flex-direction: column;
+}
+
+.user-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.user-info a:hover {
+  background: #161b22;
+}
+
+h1.title {
+  width: fit-content;
+  margin: 50px auto;
+  color: #FFF;
+}
+
+h1.title a {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.categories {
+  width: fit-content;
+  margin: 50px auto;
+  color: #FFF;
+  display: flex;
+  gap: 8px;
+}
+
+.categories span {
+  padding: 10px 26px;
+  border: 1px solid #444444;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.categories span:hover {
+  background-color: #444444;
+  filter: brightness(1.1);
+}
+
+.categories span.selected {
+  background-color: #444444;
+}
+
+/* CONTENT */
+
+.container {
+  width: fit-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container .window {
+  border-radius: 20px;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  z-index: 97;
+}
+
+.container .window .link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 9999;
+}
+
+.container .window .add {
+  border: 1px solid #444444;
+  cursor: pointer;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  color: var(--primary);
+  border-radius: 20px;
+  transition: all 200ms ease-out;
+}
+
+.container .window .add:hover {
+  background-color: #444444;
+}
+
+.container .window .add span {
+  text-decoration: none;
+}
+
+.container .window .picture {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  object-fit: cover;
+  transition: all 250ms ease-out;
+}
+
+.container .window .link:hover ~ .picture  {
+  transform: scale(1.25);
+}
+
+.container .window .content {
+  margin-left: 10px;
+  margin-top: -2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* CONTENT - Hover area */
+
+.hover-area {
+  margin-bottom: 12px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  cursor: pointer ;
+  display: flex;
+  align-content: space-between;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(000, 000, 0, 0.40);
+  user-select: none;
+}
+
+.hover-area .title {
+  color: #FFF;
+  opacity: 0.75;
+  font-weight: 400px;
+  padding: 0 16px;
+}
+
+.hover-area .title h3 {
+ text-align: center;
+}
+
+.hover-area .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.hover-area .top-bar span {
+  margin-bottom: 6px;
+}
+
+.hover-area .top-bar p {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hover-area .top-bar p::after  {
+  content: "⌵";
+  position: absolute;
+  right: -16px;
+  top: -5px;
+}
+
+.hover-area .top-bar a {
+  color: white;
+  padding: 15px 25px;
+  font-weight: bolder;
+  font-size: 12px;
+  border-radius: 40px;
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+.hover-area .top-bar a:hover {
+  filter: brightness(1.1);
+}
+
+.hover-area .bottom-bar {
+  padding: 10px 10px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hover-area .bottom-bar a {
+  padding: 5px 10px;
+  background: #efefef;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.hover-area .bottom-bar a:hover {
+  background:white;
+}
+
+.hover-area .bottom-bar img {
+  width: 34px;
+  border-radius: 50%;
+  background: #efefef;
+  padding: 8px;
+  cursor: pointer;
+  margin: 0px 2px;
+}
+.hover-area .bottom-bar img:hover {
+  background:white;
+}
+
+.hover-area {
+  opacity: 0;
+}
+
+.window:hover .hover-area {
+  opacity: 1;
+}

@@ -43,7 +43,12 @@
 
         <div class="button-container">
           <a href="../posts/index.html" class="cancel-button">Cancelar</a>
-          <button type="submit">Publicar</button>
+          <button
+            type="submit"
+            onclick="event.preventDefault(); window.location.href='../view-post/index.html'"
+          >
+            Publicar
+          </button>
         </div>
       </form>
     </div>

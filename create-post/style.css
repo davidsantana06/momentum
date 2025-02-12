@@ -47,7 +47,7 @@ body {
   gap: 10px;
 }
 
-.container button {
+.container button, .cancel-button {
   background-color: #8f66ff;
   color: #fff;
   border: none;
